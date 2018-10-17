@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34FC2909-2970-4585-9DEE-5A0707BF07CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MySchool</RootNamespace>
+    <AssemblyName>MySchool</AssemblyName>
+    <ApplicationIcon>图标4.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/MySchool/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AdminForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminForm1.Designer.cs">
+      <DependentUpon>AdminForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineExamDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnlineExamDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineExamDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnlineExamDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Student\fillblank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\fillblank.Designer.cs">
+      <DependentUpon>fillblank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\ShortAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\ShortAnswer.Designer.cs">
+      <DependentUpon>ShortAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\AddSubjectName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\AddSubjectName.Designer.cs">
+      <DependentUpon>AddSubjectName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\AlterPersonInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\AlterPersonInfo.Designer.cs">
+      <DependentUpon>AlterPersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\AnswerCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\AnswerCardForm.Designer.cs">
+      <DependentUpon>AnswerCardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\AnswerQuestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\AnswerQuestionForm.Designer.cs">
+      <DependentUpon>AnswerQuestionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\ViewStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\ViewStudent.Designer.cs">
+      <DependentUpon>ViewStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="类\DBHelper.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="类\QuizHelper.cs" />
+    <Compile Include="Student\QuizResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\QuizResultForm.Designer.cs">
+      <DependentUpon>QuizResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\SelectQuestionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\SelectQuestionsForm.Designer.cs">
+      <DependentUpon>SelectQuestionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\StudentForm.Designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="类\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student\ViewMyScoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\ViewMyScoreForm.Designer.cs">
+      <DependentUpon>ViewMyScoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\ViewTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\ViewTest.Designer.cs">
+      <DependentUpon>ViewTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\ViewTestDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\ViewTestDetail.Designer.cs">
+      <DependentUpon>ViewTestDetail.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\AdminForm1.resx">
+      <DependentUpon>AdminForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\fillblank.resx">
+      <DependentUpon>fillblank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\ShortAnswer.resx">
+      <DependentUpon>ShortAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\AddSubjectName.resx">
+      <DependentUpon>AddSubjectName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\AlterPersonInfo.resx">
+      <DependentUpon>AlterPersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\AnswerCardForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnswerCardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\AnswerQuestionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnswerQuestionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\QuizResultForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QuizResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\SelectQuestionsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SelectQuestionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\StudentForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Teacher\TeacherForm.resx">
+      <DependentUpon>TeacherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\ViewMyScoreForm.resx">
+      <DependentUpon>ViewMyScoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\ViewTest.resx">
+      <DependentUpon>ViewTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\ViewTestDetail.resx">
+      <DependentUpon>ViewTestDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\ViewStudent.resx">
+      <DependentUpon>ViewStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="OnlineExamDataSet.xsc">
+      <DependentUpon>OnlineExamDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OnlineExamDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OnlineExamDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OnlineExamDataSet.xss">
+      <DependentUpon>OnlineExamDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OnlineExamDataSet1.xsc">
+      <DependentUpon>OnlineExamDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OnlineExamDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OnlineExamDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OnlineExamDataSet1.xss">
+      <DependentUpon>OnlineExamDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="类\Subject.cs" />
+    <Compile Include="Teacher\TeacherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\TeacherForm.Designer.cs">
+      <DependentUpon>TeacherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="类\UserHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CQDJ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroud1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroud2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroud3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroud4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\图标.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="图标2.ico" />
+    <Content Include="图标4.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
